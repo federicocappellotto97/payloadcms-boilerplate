@@ -1,4 +1,4 @@
-import { GlobalConfig } from "payload/types";
+import { GlobalConfig } from "payload/types"
 
 const Header: GlobalConfig = {
   slug: "header",
@@ -37,25 +37,25 @@ const Header: GlobalConfig = {
           required: true,
           validate: (val) => {
             var expression =
-              /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
+              /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi
             if (expression.test(val)) {
-              return true;
+              return true
             }
 
-            return "URL non valido";
+            return "URL non valido"
           },
         },
       ],
       admin: {
         initCollapsed: false,
         components: {
-          RowLabel: ({ data, index }) => {
-            return data?.text || `Link ${String(index).padStart(2, "0")}`;
+          RowLabel: ({ data, index, path }) => {
+            return data?.text || `Link ${String(index).padStart(2, "0")}`
           },
         },
       },
     },
   ],
-};
+}
 
-export default Header;
+export default Header

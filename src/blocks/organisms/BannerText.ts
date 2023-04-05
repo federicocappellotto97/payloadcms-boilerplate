@@ -1,5 +1,5 @@
-import type { Block } from "payload/types";
-import { Banner } from "../molecules/Banner";
+import type { Block } from "payload/types"
+import { Banner } from "../molecules/Banner"
 
 export const BannerText: Block = {
   slug: "bannerText", // required
@@ -11,6 +11,7 @@ export const BannerText: Block = {
       name: "content",
       label: "Content",
       type: "richText",
+      localized: true,
     },
   ],
-};
+}

@@ -1,4 +1,4 @@
-import { CollectionConfig } from "payload/types";
+import { CollectionConfig } from "payload/types"
 
 const Media: CollectionConfig = {
   slug: "media",
@@ -32,6 +32,7 @@ const Media: CollectionConfig = {
     adminThumbnail: "thumbnail",
     mimeTypes: ["image/*"],
   },
-};
+  fields: [],
+}
 
-export default Media;
+export default Media

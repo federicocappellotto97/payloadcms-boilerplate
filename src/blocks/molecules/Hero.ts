@@ -1,5 +1,5 @@
-import type { Block } from "payload/types";
-import Image from "../../core/components/Image";
+import type { Block } from "payload/types"
+import Image from "../../core/components/Image"
 
 export const Hero: Block = {
   slug: "hero", // required,
@@ -11,6 +11,7 @@ export const Hero: Block = {
       name: "content",
       label: "Contenuto",
       type: "richText",
+      localized: true,
     },
   ],
-};
+}

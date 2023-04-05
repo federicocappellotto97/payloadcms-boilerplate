@@ -1,6 +1,6 @@
-import type { Block, Field } from "payload/types";
-import Cta from "../../core/components/Cta";
-import Image from "../../core/components/Image";
+import type { Block, Field } from "payload/types"
+import Cta from "../../core/components/Cta"
+import Image from "../../core/components/Image"
 
 export const Banner: Block = {
   slug: "banner", // required
@@ -13,8 +13,9 @@ export const Banner: Block = {
       label: "Titolo",
       type: "text",
       required: true,
+      localized: true,
     },
     Image,
     Cta,
   ],
-};
+}

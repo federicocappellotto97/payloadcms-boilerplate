@@ -1,7 +1,8 @@
-import { CollectionConfig } from "payload/types";
-import { BannerText } from "../blocks/organisms/BannerText";
-import { Banner } from "../blocks/molecules/Banner";
-import { Hero } from "../blocks/organisms/Hero";
+import { CollectionConfig } from "payload/types"
+import { Banner } from "../blocks/molecules/Banner"
+import { Slider } from "../blocks/molecules/Slider"
+import { BannerText } from "../blocks/organisms/BannerText"
+import { Hero } from "../blocks/molecules/Hero"
 
 const Pages: CollectionConfig = {
   slug: "pages",
@@ -24,7 +25,7 @@ const Pages: CollectionConfig = {
       name: "blocks",
       labels: {
         singular: {
-          it: "Blocck",
+          it: "Blocco",
           en: "Block",
         },
         plural: {
@@ -33,7 +34,7 @@ const Pages: CollectionConfig = {
         },
       },
       type: "blocks",
-      blocks: [Hero, Banner, BannerText],
+      blocks: [Hero, Banner, BannerText, Slider],
       localized: true,
     },
   ],
@@ -51,6 +52,6 @@ const Pages: CollectionConfig = {
       en: "Pages",
     },
   },
-};
+}
 
-export default Pages;
+export default Pages
