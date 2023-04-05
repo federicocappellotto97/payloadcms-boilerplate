@@ -1,42 +1,52 @@
+import type { Field } from "payload/types"
 import { isUrl } from "../helpers/validate"
-import { Field } from "payload/types"
+import deepMerge from "../helpers/deepmerge"
 
-const Cta: Field = {
-  name: "cta", // required
-  label: "CTA",
-  type: "group",
-  fields: [
+type CtaField = (overrides?: Partial<Field>) => Field
+
+const Cta: CtaField = (overrides = {}) =>
+  deepMerge<Field, Partial<Field>>(
     {
-      type: "row",
+      name: "cta", // required
+      label: "CTA",
+      type: "group",
       fields: [
         {
-          name: "label",
-          label: "Label",
-          type: "text",
-          admin: {
-            width: "50%",
-          },
-          localized: true,
-        },
-        {
-          name: "url",
-          type: "text",
-          validate: (val) => isUrl(val),
-          required: true,
-          admin: {
-            width: "50%",
-          },
-          localized: true,
-        },
-        {
-          name: "target", // required
-          label: { it: "Apri in una nuova scheda" },
-          type: "checkbox", // required
-          defaultValue: false,
+          type: "row",
+          fields: [
+            {
+              name: "label",
+              label: "Label",
+              type: "text",
+              admin: {
+                width: "50%",
+              },
+              localized: true,
+            },
+            {
+              name: "url",
+              type: "text",
+              validate: (val) => isUrl(val),
+              required: true,
+              admin: {
+                width: "50%",
+              },
+              localized: true,
+            },
+            {
+              name: "target", // required
+              label: {
+                it: "Apri in una nuova scheda",
+                en: "Open in a new tab",
+              },
+              type: "checkbox", // required
+              defaultValue: false,
+            },
+          ],
         },
       ],
     },
-  ],
-}
+    overrides
+  )
 
 export default Cta

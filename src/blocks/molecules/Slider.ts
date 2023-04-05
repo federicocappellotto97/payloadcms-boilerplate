@@ -14,7 +14,7 @@ export const Slider: Block = {
       required: true,
       localized: true,
     },
-    Gallery,
-    Cta,
+    Gallery(),
+    Cta(),
   ],
 }

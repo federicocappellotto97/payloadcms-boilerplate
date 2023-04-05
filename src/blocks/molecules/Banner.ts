@@ -15,7 +15,7 @@ export const Banner: Block = {
       required: true,
       localized: true,
     },
-    Image,
-    Cta,
+    Image(),
+    Cta(),
   ],
 }

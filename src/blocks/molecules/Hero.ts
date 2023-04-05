@@ -6,7 +6,7 @@ export const Hero: Block = {
   imageURL:
     "https://uploads-ssl.webflow.com/5e3de80322b300854230f11f/5f6dc8579e80bfb038a102de_hero-thumb.jpg",
   fields: [
-    Image,
+    Image(),
     {
       name: "content",
       label: "Contenuto",
