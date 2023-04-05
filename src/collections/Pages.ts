@@ -3,6 +3,7 @@ import { Banner } from "../blocks/molecules/Banner"
 import { Slider } from "../blocks/molecules/Slider"
 import { BannerText } from "../blocks/organisms/BannerText"
 import { Hero } from "../blocks/molecules/Hero"
+import slugField from "../core/components/Slug"
 
 const Pages: CollectionConfig = {
   slug: "pages",
@@ -12,7 +13,11 @@ const Pages: CollectionConfig = {
       label: "Titolo",
       type: "text",
       localized: true,
+      admin: {
+        width: "50%",
+      },
     },
+    slugField(),
     {
       name: "thumb", // required
       type: "upload", // required

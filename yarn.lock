@@ -5744,6 +5744,7 @@ __metadata:
     express: ^4.17.1
     nodemon: ^2.0.6
     payload: ^1.6.4
+    slugify: ^1.6.6
     ts-node: ^9.1.1
     typescript: ^4.8.4
   languageName: unknown
@@ -7726,6 +7727,13 @@ __metadata:
     is-plain-object: ^5.0.0
     tiny-warning: ^1.0.3
   checksum: 55a9bbb2363130bebfc2b9ac080caa8d79308507e65868a699dc760a0dc4faf0d64962005d0ad84c15114d9072dae41d9725833f82360e42076209f33449173c
+  languageName: node
+  linkType: hard
+
+"slugify@npm:^1.6.6":
+  version: 1.6.6
+  resolution: "slugify@npm:1.6.6"
+  checksum: 04773c2d3b7aea8d2a61fa47cc7e5d29ce04e1a96cbaec409da57139df906acb3a449fac30b167d203212c806e73690abd4ff94fbad0a9a7b7ea109a2a638ae9
   languageName: node
   linkType: hard
 
