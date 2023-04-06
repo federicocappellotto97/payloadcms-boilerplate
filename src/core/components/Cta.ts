@@ -1,6 +1,6 @@
 import type { Field } from "payload/types"
 import { isUrl } from "../helpers/validate"
-import deepMerge from "../helpers/deepmerge"
+import deepMerge from "../helpers/deepMerge"
 
 type CtaField = (overrides?: Partial<Field>) => Field
 

@@ -1,6 +1,6 @@
 import type { Field } from "payload/types"
 
-import deepMerge from "../helpers/deepmerge"
+import deepMerge from "../helpers/deepMerge"
 
 type ImageField = (overrides?: Partial<Field>, hasMobile?: boolean) => Field
 

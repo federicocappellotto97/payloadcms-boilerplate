@@ -2,7 +2,7 @@ import Image from "./Image"
 
 import type { Field } from "payload/types"
 
-import deepMerge from "../helpers/deepmerge"
+import deepMerge from "../helpers/deepMerge"
 
 type GalleryField = (overrides?: Partial<Field>, hasMobile?: boolean) => Field
 
